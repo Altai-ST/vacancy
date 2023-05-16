@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/vacancy  # Replace 'mydatabase' with your actual database name
+    username: root  # Replace 'your_username' with your PostgreSQL username
+    password: lololostraim2003  # Replace 'your_password' with your PostgreSQL password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update  # Use 'update' to automatically create/update the database schema
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
